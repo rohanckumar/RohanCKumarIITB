@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rohan C Kumar</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/378f7f09a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="about.html"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="courses.html">COURSES TAKEN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>ABOUT ME</h1>
+        <div class="row">
+                <br>
+                <ul style="list-style-type:none;">
+                <li>Hi, I am Rohan C Kumar, fourth year undergraduate student in the Department of Physics, IIT Bombay.</li>
+                <li> I am from Thiruvananthapuram, Kerala.</li>
+                </ul>
+                <br>
+                <ul style="list-style-type:none;">
+                <li>My interests are coding, astrophysics, clubs, being a part of team projects.</li>
+                </ul>
+                <br>
+                <ul style="list-style-type:none;">
+                <li>My hobbies are reading, watching movies, scrolling through memes and last but not the least, coding.</li>
+                </ul>
+                <br>
+                <ul style="list-style-type:none;">
+                <li>Right now, my goal in life is to contribute something to my nation, and the people who have supported me.</li>
+                </ul>
+            </div>
+        </div>
+       <!--- <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+        </div> -->
+        </section>
+           
+       
+        <!---javascript-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

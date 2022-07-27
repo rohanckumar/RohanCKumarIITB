@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rohan C Kumar</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/378f7f09a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="cheader">
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="courses.html">COURSES TAKEN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>CONTACT ME</h1>
+        <div class="contact-col">
+            <form action="form.php" method="post">
+                <textarea rows="1" name="name" placeholder="Name:" required></textarea><br><br>
+                <textarea rows="1" name="email" placeholder="Email:" required></textarea><br><br>
+                <textarea rows="8" name="comment" placeholder="Comment:" required></textarea><br><br>
+                <button type="submit" class="hero-btn red-btn">Submit</button>
+            </form>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100004574776783" target="_blank">
+            <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/rohanckumar/" target="_blank">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a href="mailto:rohanck2001@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+            </a>
+        </div> 
+        </section>
+       
+        <!---javascript-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

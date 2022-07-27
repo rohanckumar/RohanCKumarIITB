@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rohan C Kumar</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/378f7f09a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="subsubheader">
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="courses.html">COURSES TAKEN</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="proj">
+        <h1>KEY PROJECTS</h1>
+        <h4>Home Automation System Using Arduino UNO</h4>
+        Guide: Prof. Varun Bhalerao | Course Project | Oct 2021-Nov 2021 | 	IIT Bombay<br><br>
+        <ul>
+        <li>Used Arduino Uno to implement a home automation system to monitor and control home security and various electronic appliances in a room</li>
+        <li>Made use of multiple sensors to detect the temperature and movement in a room and used Arduino Uno to control the fan speed, power supply and door automation in a room</li>
+        </ul>
+        <br>
+        <h4>Arithmetic and Logical Unit</h4>
+        Guide: Prof. Virendra Singh | Course Project | Dec 2020 |	IIT Bombay<br><br>
+        <ul>
+        <li>Used Structural VHDL to design a signed 16-bit Arithmetic and Logical Unit that performs Signed Addition, Subtraction, NAND and XOR operations</li>
+        <li> Designed Brent Kung fast adder using VHDL to compute signed addition operation</li>
+        <li>Designed a multiplexer and 4 input XOR gate using Structural VHDL</li>
+        </ul>   
+        </div>
+        </section>
+       
+        <!---javascript-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
